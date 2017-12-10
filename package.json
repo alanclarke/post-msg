@@ -1,6 +1,6 @@
 {
   "name": "post-msg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Post message made simple",
   "main": "index.js",
   "scripts": {
