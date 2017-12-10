@@ -21,13 +21,14 @@ var createPostMsg = require('post-msg')
 var postMsg = createPostMsg(targetWindow, '*')
 
 postMsg.on('*', log) // listen to all post messages from the targetWindow
+
 postMsg.on('namespace', log) // listen for namespaced post messages from the targetWindow
 
 postMsg.emit('hello', { data: true }) // send a post message to the targetWindow
 
 postMsg.dispose() // remove all event and post message listeners
 
-function log (type, data) {
-  console.log(type, data)
+function log (type, data, origin, source) {
+  console.log(type, data, origin, source)
 }
 ```
