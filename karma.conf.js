@@ -26,11 +26,11 @@ module.exports = function (config) {
       quiet: true,
       noInfo: true
     },
-    reporters: [ 'progress', 'coverage-istanbul' , 'coverage' ],
+    reporters: [ 'progress', 'coverage-istanbul', 'coverage' ],
     coverageIstanbulReporter: {
       reports: [ 'text-summary' ],
       fixWebpackSourcePaths: true
     },
-    browsers: ['Chrome']
+    browsers: ['Firefox']
   })
 }
