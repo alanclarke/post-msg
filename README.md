@@ -20,6 +20,7 @@ npm install --save post-msg
 - `createPostMsg(window, origin)`: returns a postMsg instance
 - `postMsg.on(namespace, handler)`: listen for and handle post messages from target window
 - `postMsg.emit(namespace, data)`: send post messages to target window
+- `postMsg.dispose()`: destroy postMsg instance and remove all listeners
 
 example:
 ```js
