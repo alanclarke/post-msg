@@ -16,6 +16,9 @@ npm install --save post-msg
 ```
 
 ## Usage
+createPostMsg(window, origin)
+
+example:
 ```js
 var createPostMsg = require('post-msg')
 var postMsg = createPostMsg(targetWindow, '*')
