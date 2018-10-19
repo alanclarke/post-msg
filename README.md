@@ -16,7 +16,10 @@ npm install --save post-msg
 ```
 
 ## Usage
-createPostMsg(window, origin)
+
+- `createPostMsg(window, origin)`: returns a postMsg instance
+- `postMsg.on(namespace, handler)`: listen for and handle post messages from target window
+- `postMsg.emit(namespace, data)`: send post messages to target window
 
 example:
 ```js
